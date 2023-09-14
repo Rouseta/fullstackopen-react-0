@@ -1,10 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
-const App = () => (
-  <div>
-    <h1>Hello world!</h1>
-  </div>
-)
+const App = () => {
+  const now = new Date()
+  const a = 10
+  const b = 20
 
-ReactDOM.render(<App />, document.getElementById('root')) 
+  return (
+    <div>
+      <p>Hello world, it is {now.toString()}</p>
+      <p>
+        {a} plus {b} is {a + b}
+      </p>
+    </div>
+  )
+}
+
+
+createRoot(document.getElementById('root')).render(<App />)
