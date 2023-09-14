@@ -1,18 +1,21 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
+const Hello = () => {
+  return (
+    <div>
+      <h3>Hola mundo</h3>
+    </div>
+  )
+}
 const App = () => {
-  const now = new Date()
-  const a = 10
-  const b = 20
+
 
   return (
     <div>
-      <p>Hello world, it is {now.toString()}</p>
-      <p>
-        {a} plus {b} is {a + b}
-      </p>
-    </div>
+      <h1>Saluditos</h1>
+      <Hello />
+    </div >
   )
 }
 
