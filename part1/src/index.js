@@ -13,7 +13,8 @@ const Header = (props) => {
 const Content = (props) => {
   return (
     <>
-      <p>The course has two parts:   {props.parts1}  , {props.parts2} and  {props.parts3} and also you need to complete: {props.exercise1} , {props.exercise2} and {props.exercise3} exercises</p>
+      <p>The course has three parts:
+        <li>{props.parts1} with {props.exercise1} exercises </li> <li> {props.parts2} with {props.exercise2}exercises</li> <li>{props.parts3} with {props.exercise3} exercises </li> </p>
     </>
   )
 
@@ -21,7 +22,7 @@ const Content = (props) => {
 const Total = (props) => {
   return (
     <>
-      <p>Number of exercises {props.total}</p>
+      <p>Total number of exercises: {props.total}</p>
     </>
   )
 
